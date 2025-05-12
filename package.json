@@ -1,0 +1,24 @@
+@'
+{
+    "name": "inventory-management-system",
+    "version": "1.0.0",
+    "description": "MERN Stack Inventory & Stock Management System",
+    "main": "server/server.js",
+    "type": "commonjs",
+    "scripts": {
+        "start": "node server/server.js",
+        "server": "nodemon server/server.js",
+        "client": "npm start --prefix client",
+        "dev": "concurrently \"npm run server\" \"npm run client\"",
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "keywords": [
+        "mern",
+        "inventory",
+        "management"
+    ],
+    "author": "",
+    "license": "MIT",
+    "dependencies": {}
+}
+'@ | Out-File -Encoding UTF8 package.json
