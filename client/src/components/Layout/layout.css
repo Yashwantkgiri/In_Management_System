@@ -1,0 +1,29 @@
+
+.app-container {
+  display: flex;
+}
+
+.content-container {
+  width: 100%;
+  margin-left: 250px;
+  transition: margin-left 0.3s;
+  padding-top: 56px;
+}
+
+.content-container.sidebar-closed {
+  margin-left: 70px;
+}
+
+.main-content {
+  padding: 20px;
+}
+
+@media (max-width: 768px) {
+  .content-container {
+    margin-left: 0;
+  }
+  
+  .content-container.sidebar-closed {
+    margin-left: 0;
+  }
+}
